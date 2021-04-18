@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro-Clock</title>
+</head>
+
+
+<body>
+    <div id="pomodoro-container">
+        <div id="pomodoro-clock">
+        <center> <h1 ><div id="pomodoro-timer" class="espaco">00:00</h1>  </center>
+          </div>
+          <div><center>
+            <input
+              type="text"
+              id="pomodoro-clock-task"
+              placeholder="Enter your task..."
+            />
+          </center>
+          </div>
+          
+          <div id="pomodoro-clock-actions" class="max-width">
+          <center>
+            
+            <button id="pomodoro-start"   class="bg-green">Start</button> 
+            <button id="pomodoro-pause" class="bg-yellow">Pause</button> 
+            <button id="pomodoro-stop" class="bg-red">Stop</button> 
+        
+        </center>
+        
+           
+        </div>
+
+      </div>
+      <center>
+      <div id="pomodoro-clock-title">
+        <span>
+          Changes made here will reflect at the start of the next work /
+          break session
+        </span>
+      </div>
+      <div id="pomodoro-clock-actions">
+        <div class="pomodoro-input">
+          <label>Work Duration</label>
+          <input name="input-work-duration" id="input-work-duration" type="number" />
+        </div>
+        <div class="pomodoro-input">
+          <label>Break Duration</label>
+          <input name="input-break-duration" id="input-break-duration" type="number" />
+        </div>
+      </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</center>
+  </div>
+
+      <div id="pomodoro-info">
+      <center>  <h3 class="session">Your Sessions</h3> </center>
+       <center> <ul id="pomodoro-sessions" class="ui"></ul> </center>
+      </div>
+      
+       <script src="script.js"></script>
+</body>
+
+</html>
