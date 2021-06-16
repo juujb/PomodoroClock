@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script data-ad-client="ca-pub-9970967089089167" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro-Clock</title>
+  <script data-ad-client="ca-pub-9970967089089167" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro-Clock</title>
 </head>
 
 
 <body>
-    <div id="pomodoro-container">
-        <div id="pomodoro-clock">
-        <center> <h1 ><div id="pomodoro-timer" class="espaco">00:00</h1>  </center>
-          </div>
-          <div><center>
-            <input
-              type="text"
-              id="pomodoro-clock-task"
-              placeholder="Enter your task..."
-            />
-          </center>
-          </div>
-          
-          <div id="pomodoro-clock-actions" class="max-width">
-          <center>
-            
-            <button id="pomodoro-start"   class="bg-green">Start</button> 
-            <button id="pomodoro-pause" class="bg-yellow">Pause</button> 
-            <button id="pomodoro-stop" class="bg-red">Stop</button> 
-        
-        </center>
-        
-           
-        </div>
-
-      </div>
+  <div id="pomodoro-container">
+    <div id="pomodoro-clock">
       <center>
-      <div id="pomodoro-clock-title">
-          <br>
-        <span>
-          Changes made here will reflect at the start of the next work /
-          break session
-        </span>
-          <br>
+        <h1>
+          <div id="pomodoro-timer" class="espaco">00:00
+        </h1>
+      </center>
+    </div>
+    <div>
+      <center>
+        <input type="text" id="pomodoro-clock-task" placeholder="Enter your task..." />
+      </center>
+    </div>
+
+    <div id="pomodoro-clock-actions" class="max-width">
+      <center>
+
+        <button id="pomodoro-start" class="bg-green">Start</button>
+        <button id="pomodoro-pause" class="bg-yellow">Pause</button>
+        <button id="pomodoro-stop" class="bg-red">Stop</button>
+
+      </center>
+
+
+    </div>
+
+  </div>
+  <center>
+    <div id="pomodoro-clock-title">
+      <br>
+      <span>
+        Changes made here will reflect at the start of the next work /
+        break session
+      </span>
+      <br>
+    </div>
+    <div id="pomodoro-clock-actions">
+      <div class="pomodoro-input">
+        <br> <label>Work Duration</label>
+        <input name="input-work-duration" id="input-work-duration" type="number" />
       </div>
-      <div id="pomodoro-clock-actions">
-        <div class="pomodoro-input">
-         <br> <label>Work Duration</label>
-          <input name="input-work-duration" id="input-work-duration" type="number" />
-        </div>
-        <div class="pomodoro-input">
-          <br> <label>Break Duration</label>
-          <input name="input-break-duration" id="input-break-duration" type="number" />
-        </div>
-      </div>
-        </ul>
+      <div class="pomodoro-input">
+        <br> <label>Break Duration</label>
+        <input name="input-break-duration" id="input-break-duration" type="number" />
       </div>
     </div>
-  </div>
-</center>
+    </ul>
+    </div>
+    </div>
+    </div>
+  </center>
   </div>
 
-      <div id="pomodoro-info">
-      <center>  <h3 class="session">Your Sessions</h3> </center>
-       <center> <ul id="pomodoro-sessions" class="ui"></ul> </center>
-      </div>
-      
-       <script src="script.js"></script>
+  <div id="pomodoro-info">
+    <center>
+      <h3 class="session">Your Sessions</h3>
+    </center>
+    <center>
+      <ul id="pomodoro-sessions" class="ui"></ul>
+    </center>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
